@@ -5,76 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+    <div class="flex-container flex-gap-10 flex-100 ">
+      <div class="sidebar-wrapper main-card">
+        <section class="sidebar-profile">
+            <div class="profile-card">
+              <img src="./images/image-jeremy.png" class="profile-user-image"/>
+              
+              <div class="profile-details">
+                <p class="report-for">Report for</p>
+                <h1 class="profile-name">Jeremy Robson</h1>
+              </div>
+            </div>
+            <div class="profile-report">
+              <ul class="profile-report-lists">
+                <li class="profile-report-item fw-400">Daily</li>
+                <li class="profile-report-item fw-400 item-active">Weekly</li>
+                <li class="profile-report-item fw-400">Monthly</li>
+              </ul>
+            </div>
+        </section>
+      </div>
+      <div class="content-wrapper">
+        <div class="grid-container grid-col-3 grid-gap-1">
+          <div class="content-card">
+            <div class="content-card-header work-header ">
+              <img src="./images/icon-work.svg" />
+            </div>
+            <div class="content-card-body">
+              <div class="content-body-header">
+                <span>Work</span>
+                <img src="./images/icon-ellipsis.svg" class="image-epllise-icon"/>
+              </div>
+              <h2 class="text-color-white fw-400">32hrs</h2>
+              <p class="text-last-title">Last week -  <span>36hrs</span></p>
+            </div>
+          </div>
+          <div class="content-card">
+            <div class="content-card-header play-header">
+              <img src="./images/icon-play.svg" />
+            </div>
+            <div class="content-card-body">
+              <div class="content-body-header">
+                <span>Play</span>
+                <img src="./images/icon-ellipsis.svg" class="image-epllise-icon"/>
+              </div>
+              <h2 class="text-color-white fw-400">10hrs</h2>
+              <p class="text-last-title">Last week -  <span>8hrs</span></p>
+            </div>
+          </div>
+          <div class="content-card">
+            <div class="content-card-header study-header">
+              <img src="./images/icon-study.svg" />
+            </div>
+            <div class="content-card-body">
+              <div class="content-body-header">
+                <span>Study</span>
+                <img src="./images/icon-ellipsis.svg" class="image-epllise-icon"/>
+              </div>
+              <h2 class="text-color-white fw-400">4hrs</h2>
+              <p class="text-last-title">Last week -  <span>13hrs</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container grid-col-3 grid-gap-1">
+          <div class="content-card mb-0">
+            <div class="content-card-header exericse-header">
+              <img src="./images/icon-exercise.svg"/>
+            </div>
+            <div class="content-card-body">
+              <div class="content-body-header">
+                <span>Exercise</span>
+                <img src="./images/icon-ellipsis.svg" class="image-epllise-icon"/>
+              </div>
+              <h2 class="text-color-white fw-400">4hrs</h2>
+              <p class="text-last-title">Last week -  <span>11hrs</span></p>
+            </div>
+          </div>
+          <div class="content-card mb-0">
+            <div class="content-card-header social-header">
+              <img src="./images/icon-social.svg" />
+            </div>
+            <div class="content-card-body">
+              <div class="content-body-header">
+                <span>Social</span>
+                <img src="./images/icon-ellipsis.svg" class="image-epllise-icon"/>
+              </div>
+              <h2 class="text-color-white fw-400">5hrs</h2>
+              <p class="text-last-title">Last week -  <span>10hrs</span></p>
+            </div>
+          </div>
+          <div class="content-card mb-0">
+            <div class="content-card-header self-care-header">
+              <img src="./images/icon-self-care.svg" />
+            </div>
+            <div class="content-card-body">
+              <div class="content-body-header">
+                <span>Self Care</span>
+                <img src="./images/icon-ellipsis.svg" class="image-epllise-icon"/>
+              </div>
+              <h2 class="text-color-white fw-400">2hrs</h2>
+              <p class="text-last-title">Last week -  <span>2hrs</span></p>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+    </div>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
